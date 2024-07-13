@@ -81,6 +81,10 @@ export const getFrequenceWords = (
   return wordCount;
 };
 export const getReverseWords = (text: string): string => {
+  if (text === "") {
+    return "";
+  }
+
   const splitedReversePhrase = text
     .split("")
     .reverse()
