@@ -23,3 +23,16 @@ export const countCharacters = (text: string): number => {
 
   return charactersCount;
 };
+
+export const getShortWords = (text: string, length: number = 4): number => {
+  const emptyString = "";
+
+  if (text === emptyString) {
+    return 0;
+  }
+  const textWords = text
+    .split(" ")
+    .filter((word) => word.length <= length).length;
+
+  return textWords;
+};
