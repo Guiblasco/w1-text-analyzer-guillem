@@ -1,4 +1,4 @@
-import { countCharacters } from "../../analytics/index.js";
+import { countCharacters } from "../index.js";
 
 const test1 = (): void => {
   console.log("countCharacters Function test 1");

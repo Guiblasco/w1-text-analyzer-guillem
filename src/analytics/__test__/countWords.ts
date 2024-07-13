@@ -1,4 +1,4 @@
-import { countWords } from "../../analytics/index.js";
+import { countWords } from "../index.js";
 
 const test1 = (): void => {
   console.log("countWords function case 0");

@@ -1,4 +1,4 @@
-import { listShortWords } from "../../analytics/index.js";
+import { listShortWords } from "../index.js";
 
 const test1 = (): void => {
   console.log("\nshould returns 0 words if fuction empty string is given");

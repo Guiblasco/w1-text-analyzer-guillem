@@ -1,4 +1,4 @@
-import { getShortWords } from "../../analytics/index.js";
+import { getShortWords } from "../index.js";
 
 const test1 = (): void => {
   console.log("should return 0 when function recive empty string ");

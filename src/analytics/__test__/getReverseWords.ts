@@ -1,4 +1,4 @@
-import { getReverseWords } from "../../analytics/index.js";
+import { getReverseWords } from "../index.js";
 
 const test1 = (): void => {
   console.log(

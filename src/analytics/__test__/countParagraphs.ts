@@ -1,4 +1,4 @@
-import { countParagraphs } from "../../analytics/index.js";
+import { countParagraphs } from "../index.js";
 
 const test1 = (): void => {
   console.log("Should be return 0 paragraph");
