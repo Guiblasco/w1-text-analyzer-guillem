@@ -80,7 +80,7 @@ export const getFrequenceWords = (
 
   return wordCount;
 };
-export const getReverseWords = (text: string): string => {
+export const getReversedText = (text: string): string => {
   if (text === "") {
     return "";
   }
