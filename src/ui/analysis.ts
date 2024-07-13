@@ -3,6 +3,7 @@ import {
   countParagraphs,
   countWords,
   getShortWords,
+  listShortWords,
 } from "../analytics/index.js";
 
 const totalsContainer = document.querySelector(".totals");
@@ -132,4 +133,5 @@ export const analyzeText = (text: string): void => {
   renderWordsTotal(countWords(text));
   renderCharactersTotal(countCharacters(text));
   renderShortWordsTotal(getShortWords(text));
+  renderShortWordsList(listShortWords(text));
 };
