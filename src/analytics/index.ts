@@ -36,3 +36,11 @@ export const getShortWords = (text: string, length: number = 4): number => {
 
   return textWords;
 };
+
+export const listShortWords = (text: string): string => {
+  const lengthWord = 4;
+  const listWords = text
+    .split(" ")
+    .filter((shortWord) => shortWord.length <= lengthWord);
+  return listWords.join(",");
+};
