@@ -44,3 +44,21 @@ export const listShortWords = (text: string): string => {
     .filter((shortWord) => shortWord.length <= lengthWord);
   return listWords.join(",");
 };
+
+export const getPalindrome = (text: string): string => {
+  const emptyString = "";
+
+  if (text === emptyString) {
+    return "Isn't Palindrome";
+  }
+  const splitedPhrase = text.split(" ").join("").toLocaleLowerCase();
+  const splitedReversePhrase = splitedPhrase
+    .split("")
+    .reverse()
+    .join("")
+    .toLocaleLowerCase();
+
+  return splitedPhrase === splitedReversePhrase
+    ? "Is Palindrome"
+    : "Isn't Palindrome";
+};
