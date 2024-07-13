@@ -1,4 +1,4 @@
-import { getReverseWords } from "../index.js";
+import { getReversedWords } from "../../analytics/index.js";
 
 const test1 = (): void => {
   console.log(
@@ -6,7 +6,7 @@ const test1 = (): void => {
   );
 
   const emptyString = "";
-  const reversedWords = getReverseWords(emptyString);
+  const reversedWords = getReversedWords(emptyString);
   const expectedResult = emptyString;
 
   if (reversedWords === expectedResult) {
@@ -23,7 +23,7 @@ const test2 = (): void => {
   console.log("\n Should be return a string with reversed words");
 
   const emptyString = "Hola";
-  const reversedWords = getReverseWords(emptyString);
+  const reversedWords = getReversedWords(emptyString);
   const expectedResult = "aloh";
 
   if (reversedWords === expectedResult) {
