@@ -62,3 +62,30 @@ export const getPalindrome = (text: string): string => {
     ? "Is Palindrome"
     : "Isn't Palindrome";
 };
+
+export const getFrequenceWords = (
+  text: string,
+  frequenceWord: string
+): number => {
+  const newLocal = "";
+  if (text === newLocal) {
+    return 0;
+  }
+
+  const wordCount = text
+    .split(" ")
+    .filter(
+      (word) => word.toLowerCase() === frequenceWord.toLocaleLowerCase()
+    ).length;
+
+  return wordCount;
+};
+export const getReverseWords = (text: string): string => {
+  const splitedReversePhrase = text
+    .split("")
+    .reverse()
+    .join("")
+    .toLocaleLowerCase();
+
+  return splitedReversePhrase;
+};
