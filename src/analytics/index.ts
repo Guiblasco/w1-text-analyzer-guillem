@@ -5,3 +5,14 @@ export const countParagraphs = (text: string): number => {
 
   return paragraphsCount;
 };
+export const countWords = (text: string): number => {
+  const emptyString = "";
+
+  if (text === emptyString) {
+    return 0;
+  }
+
+  const wordsCount = text.split(" ").filter((word) => word.length > 0).length;
+
+  return wordsCount;
+};
