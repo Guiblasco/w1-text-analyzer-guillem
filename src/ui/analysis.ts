@@ -7,7 +7,7 @@ import {
   getReversedText,
   getShortWords,
   listShortWords,
-} from "../analtycs/index.js";
+} from "../analytics/index.js";
 
 const totalsContainer = document.querySelector(".totals");
 const shortWordsContainer = document.querySelector(".short");
