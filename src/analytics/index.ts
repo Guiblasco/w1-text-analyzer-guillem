@@ -93,3 +93,12 @@ export const getReversedText = (text: string): string => {
 
   return splitedReversePhrase;
 };
+export const getReversedWords = (text: string): string => {
+  const lengthWord = 5;
+  const listWords = text
+    .split(" ")
+    .filter((shortWord) => shortWord.length <= lengthWord)
+    .reverse();
+
+  return listWords.join(",");
+};
