@@ -102,13 +102,6 @@ export const getReversedWords = (text: string): string => {
 
   return listWords.join(",");
 };
-export const getKebabCaseText = (text: string): string => {
-  if (text === "") {
-    return "";
-  }
-  const kebabCaseText = text.split(" ").join("-");
-  return kebabCaseText;
-};
 
 export const getSnakeCaseText = (text: string): string => {
   if (text === "") {
@@ -116,4 +109,11 @@ export const getSnakeCaseText = (text: string): string => {
   }
   const snakeText = text.split(" ").join("_");
   return snakeText;
+};
+export const getKebabCaseText = (text: string): string => {
+  if (text === "") {
+    return "";
+  }
+  const kebabCaseText = text.split(" ").join("-");
+  return kebabCaseText;
 };
