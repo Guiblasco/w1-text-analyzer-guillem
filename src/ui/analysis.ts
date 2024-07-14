@@ -139,6 +139,6 @@ export const analyzeText = (text: string): void => {
   renderShortWordsTotal(getShortWords(text));
   renderShortWordsList(listShortWords(text));
   renderPalindromes(getPalindrome(text));
-  //renderReversedWords(getReversedWords(text));
-  //renderReversedText(getReversedText(text));
+  renderReversedWords(getReversedWords(text));
+  renderReversedText(getReversedText(text));
 };
