@@ -6,7 +6,7 @@ const test1 = (): void => {
   );
 
   const emptyString = "";
-  const kebabCaseText = getSnakeCaseText(emptyString);
+  const kebabCaseText = getKebabCaseText(emptyString);
   const expectedResult = emptyString;
 
   if (kebabCaseText === expectedResult) {
@@ -20,10 +20,10 @@ const test1 = (): void => {
   }
 };
 const test2 = (): void => {
-  console.log("\nShould be returns a string with snakeCase format");
+  console.log("\nShould be returns a string with kebabCase format");
 
-  const text = "Hola como estas";
-  const kebabCaseText = getKebabCaseText(text);
+  const phrase = "Hola como estas";
+  const kebabCaseText = getKebabCaseText(phrase);
   const expectedResult = "Hola-como-estas";
 
   if (kebabCaseText === expectedResult) {
