@@ -7,6 +7,7 @@ import {
   getReversedText,
   getReversedWords,
   getShortWords,
+  getSnakeCaseText,
   listShortWords,
 } from "../analytics/index.js";
 
@@ -141,4 +142,5 @@ export const analyzeText = (text: string): void => {
   renderPalindromes(getPalindrome(text));
   renderReversedWords(getReversedWords(text));
   renderReversedText(getReversedText(text));
+  renderSnakeCase(getSnakeCaseText(text));
 };
