@@ -2,6 +2,7 @@ import {
   countCharacters,
   countParagraphs,
   countWords,
+  getCamelCaseText,
   getFrequenceWords,
   getKebabCaseText,
   getPalindrome,
@@ -145,4 +146,5 @@ export const analyzeText = (text: string): void => {
   renderReversedText(getReversedText(text));
   renderSnakeCase(getSnakeCaseText(text));
   renderKebabCase(getKebabCaseText(text));
+  renderCamelCase(getCamelCaseText(text));
 };
