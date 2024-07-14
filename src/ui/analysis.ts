@@ -3,6 +3,7 @@ import {
   countParagraphs,
   countWords,
   getFrequenceWords,
+  getKebabCaseText,
   getPalindrome,
   getReversedText,
   getReversedWords,
@@ -143,4 +144,5 @@ export const analyzeText = (text: string): void => {
   renderReversedWords(getReversedWords(text));
   renderReversedText(getReversedText(text));
   renderSnakeCase(getSnakeCaseText(text));
+  renderKebabCase(getKebabCaseText(text));
 };
