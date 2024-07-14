@@ -80,6 +80,7 @@ export const getFrequenceWords = (
 
   return wordCount;
 };
+
 export const getReversedText = (text: string): string => {
   if (text === "") {
     return "";
@@ -93,6 +94,7 @@ export const getReversedText = (text: string): string => {
 
   return splitedReversePhrase;
 };
+
 export const getReversedWords = (text: string): string => {
   const lengthWord = 5;
   const listWords = text
@@ -107,13 +109,31 @@ export const getSnakeCaseText = (text: string): string => {
   if (text === "") {
     return "";
   }
+
   const snakeText = text.split(" ").join("_");
+
   return snakeText;
 };
+
 export const getKebabCaseText = (text: string): string => {
   if (text === "") {
     return "";
   }
+
   const kebabCaseText = text.split(" ").join("-");
+
   return kebabCaseText;
+};
+
+export const getCamelCaseText = (text: string): string => {
+  if (text === "") {
+    return "";
+  }
+
+  const splitedText = text.split(" ");
+  const camelCaseText = splitedText.map((word) => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+
+  return camelCaseText.join("");
 };
