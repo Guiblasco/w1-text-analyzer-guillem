@@ -98,7 +98,7 @@ export const getReversedText = (text: string): string => {
 export const getReversedWords = (text: string): string => {
   const lengthWord = 5;
   const listWords = text
-    .split(" ")
+    .split("")
     .filter((shortWord) => shortWord.length <= lengthWord)
     .reverse();
 
@@ -136,4 +136,22 @@ export const getCamelCaseText = (text: string): string => {
   });
 
   return camelCaseText.join("");
+};
+
+export const getCensuredText = (
+  text: string,
+  forbidenWords: string[]
+): string => {
+  const emptyString = "";
+
+  if (text === emptyString) {
+    return emptyString;
+  }
+
+  const forbidenJoinedWords = forbidenWords
+    .filter((forbidenWord) => forbidenWords.includes(forbidenWord))
+    .join(",");
+  const censuredText = text.replace(forbidenJoinedWords, "****");
+
+  return censuredText;
 };
