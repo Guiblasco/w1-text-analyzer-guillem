@@ -67,10 +67,10 @@ export const getFrequenceWords = (
   text: string,
   frequenceWord: string
 ): number => {
-  const newLocal = "";
+  /* const newLocal = "";
   if (text === newLocal) {
     return 0;
-  }
+  }*/
 
   const wordCount = text
     .split(" ")
